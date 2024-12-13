@@ -1,7 +1,10 @@
 
 import java.awt.event.KeyEvent;
 
-
+/**
+ * 
+ * @author AdrianAraMol
+ */
 
 public class crearPartido extends javax.swing.JFrame
 {
@@ -14,7 +17,10 @@ public class crearPartido extends javax.swing.JFrame
     {
         initComponents();
     }
-
+/**
+ * 
+ * @param ventana Variable vebtana
+ */
    
     public crearPartido(Apuesta ventana) 
     {
@@ -70,12 +76,18 @@ public class crearPartido extends javax.swing.JFrame
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * 
+     * @param p Variable para añadir partido
+     */
+    
     public void añadePartido(String p)
     {
         v.partidoNuevo(p);
         tPartido.setText("");
         tPartido.requestFocus();
     }
+    
     
     private void bAgregarPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAgregarPartidoActionPerformed
         añadePartido(tPartido.getText());
