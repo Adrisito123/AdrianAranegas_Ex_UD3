@@ -3,11 +3,11 @@ import javax.swing.DefaultListModel;
 import javax.swing.JDialog;
 import javax.swing.WindowConstants;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * 
+ * @author AdrianAraMol
  */
+
 
 public class Apuesta extends javax.swing.JFrame {
 
@@ -120,7 +120,10 @@ public class Apuesta extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+/**
+ * 
+ * @param evt Variable donde se guarda todas las acciones del programa
+ */
     private void bNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNuevoActionPerformed
         crearPartido agregarpartido = new crearPartido(this);
         agregarpartido.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
@@ -140,6 +143,12 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaResultados.setModel(modelovacio);
     }//GEN-LAST:event_bResetearActionPerformed
 
+    /**
+     * 
+     * @param n1 Variable del numero1
+     * @param n2 Variable del numero2
+     * @return 
+     */
    
     public int cualquiera(int n1, int n2)
     {
@@ -172,6 +181,10 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaResultados.setModel(modeloquinielaresuelta);
     }//GEN-LAST:event_bRealizarActionPerformed
 
+    /**
+     * 
+     * @param partido Variable String para listaQuiniela
+     */
     
     public void partidoNuevo(String partido)
     {
@@ -185,7 +198,11 @@ public class Apuesta extends javax.swing.JFrame {
 
         this.listaQuiniela.setModel(modelonuevo);
     }
-    
+  
+    /**
+     * 
+     * @param indice Variable int para el Indice
+     */
   
     public void borraPartido(int indice)
     {
